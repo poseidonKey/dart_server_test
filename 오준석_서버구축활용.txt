@@ -1,0 +1,23 @@
+영상
+https://www.youtube.com/watch?v=Cz55mcHG6Xk&list=PLxTmPHxRH3VXLtWvOiftL9EAoVkQKEaWI&index=1
+
+
+dart create -t server-shelf . --force     서버 구동
+
+서버에 구현을 위한 라이브러리 추가
+dart pub add shelf_multipart 
+
+
+server.dart 에
+_uploadHandler 만들기
+
+router 추가
+..post('/upload', _uploadHandler);
+
+
+서버 실행
+dart run bin/server.dart
+
+postman 이용해서  png파일 업로드 테스트
+
+클라이언트 만들어서 최종 테스트 완료
